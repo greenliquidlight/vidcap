@@ -9,6 +9,12 @@ FetchContent_Declare(
         GIT_SHALLOW TRUE
         GIT_PROGRESS TRUE
 )
+
+# Do not run openCV tests during build
+set(BUILD_TESTS OFF CACHE BOOL "" FORCE)  # Disable OpenCV tests
+set(BUILD_PERF_TESTS OFF CACHE BOOL "" FORCE)  # Disable performance tests
+set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)  # Optionally, disable building examples
+
 FetchContent_MakeAvailable(opencv)
 
 add_executable(vidcap main.cpp)
