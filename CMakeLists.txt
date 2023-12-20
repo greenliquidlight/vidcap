@@ -6,7 +6,9 @@ project(VideoCapture C CXX)
 set(CMAKE_CXX_STANDARD 20)
 
 # needed to get rid of clang buils error
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -std=c++20")
+if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -std=c++20")
+endif()
 
 # add sources
 add_subdirectory(src)
