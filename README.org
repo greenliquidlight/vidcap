@@ -2,6 +2,15 @@
   Simple video viewer that can take screen snapshots.
 
 [[https://github.com/greenliquidlight/vidcap/actions/workflows/cmake-multi-platform.yml][file:https://github.com/greenliquidlight/vidcap/actions/workflows/cmake-multi-platform.yml/badge.svg]]
+
+** Documentation
+The documentation for this project is contained in the docs folder.
+*** Documentation Structure 
+The documentation is structured as follows:
+- docs/UserStories: This is a list of user stories that describe the functionality of the application.
+- docs/resources: This folder contains resources that are used in the documentation such as images and diagrams.
+
+
 ** Software Stack
    - Build and Test Management : CMake
    - Video Capture and Display: OpenCV
