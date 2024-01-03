@@ -7,9 +7,8 @@
 The documentation for this project is contained in the docs folder.
 *** Documentation Structure 
 The documentation is structured as follows:
-- docs/UserStories: This is a list of user stories that describe the functionality of the application.
-- docs/resources: This folder contains resources that are used in the documentation such as images and diagrams.
-
+- [[https://github.com/greenliquidlight/vidcap/blob/main/docs/UserStories.org][docs/UserStories.org]]: This is a list of user stories that describe the functionality of the application.
+- [[https://github.com/greenliquidlight/vidcap/blob/main/docs/UserStories.org][docs/resources]]: This folder contains resources that are used in the documentation such as images and diagrams.
 
 ** Software Stack
    - Build and Test Management : CMake
