@@ -9,29 +9,38 @@
   - This document contains the user stories for *vidcap*. User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system.
   - Each user story is intended to capture a single functionality or feature of the system.
 
-* User Stories
+* User Stories [0%]
   :PROPERTIES:
   :CUSTOM_ID: user_stories
   :END:
 
-** TODO [0/0] USERSTORY001: As a user, I want the application to enumerate the video capture devices on launch and display a video stream for each detected input so that I can select which video streams to display.
+** TODO USERSTORY001: As a user, I want the application to enumerate the video capture devices on launch so that I can see which devices are available.
    :PROPERTIES:
-   :StoryPoints: 8
+   :StoryPoints: 4
    :AssignedTo: AW
    :END:
-   - Description: When the application is launched, it should automatically enumerate the video capture devices available on the system and display a video stream for each detected input. The user should be able to select which video streams to display.
+   - Description: When the application is launched, it should automatically enumerate the video capture devices available on the system.
    - Acceptance Criteria:
      - Criterion 1: The application should enumerate the video capture devices on system launch.
-     - Criterion 2: The application should display a video stream for each detected input.
-     - Criterion 3: The user should be able to select which video streams to display.
-   - Notes: [Any additional notes or context]
-   - Tasks:
+     - Criterion 2: The application should handle the case where no video capture devices are found.
+   - Tasks [0/2]:
      - [ ] Enumerate the video capture devices on the system.
      - [ ] Handle the case where no video capture devices are found.
+
+** TODO USERSTORY002: As a user, I want the application to display a video stream for each detected input so that I can select which video streams to display.
+   :PROPERTIES:
+   :StoryPoints: 4
+   :AssignedTo: AW
+   :END:
+   - Description: The application should display a video stream for each detected input. The user should be able to select which video streams to display.
+   - Acceptance Criteria:
+     - Criterion 1: The application should display a video stream for each detected input.
+     - Criterion 2: The user should be able to select which video streams to display.
+   - Tasks [0/2]:
      - [ ] Display a video stream for each detected device.
      - [ ] Allow the user to select which video streams to display.
 
-** TODO [0/0] USERSTORY002: As a user, I want the application to re-enumerate the video capture devices that are attached to the system so that I can detect any changes in the available devices.
+** TODO USERSTORY003: As a user, I want the application to re-enumerate the video capture devices that are attached to the system so that I can detect any changes in the available devices.
    :PROPERTIES:
    :StoryPoints: 5
    :AssignedTo: AW
@@ -40,11 +49,11 @@
    - Acceptance Criteria:
      - Criterion 1: The application should re-enumerate the video capture devices when requested by the user.
      - Criterion 2: The application should update the display after re-enumerating the video capture devices.
-   - Tasks:
+   - Tasks [/]:
      - [ ] Implement a feature to re-enumerate the video capture devices.
      - [ ] Update the display after re-enumerating the video capture devices.
 
-** TODO [0/0] USERSTORY003: As a user, I want to be able to display video streams that are not currently displayed so that I can view different video streams as needed.
+** TODO USERSTORY004: As a user, I want to be able to display video streams that are not currently displayed so that I can view different video streams as needed.
    :PROPERTIES:
    :StoryPoints: 6
    :AssignedTo: AW
@@ -53,11 +62,11 @@
    - Acceptance Criteria:
      - Criterion 1: The user should be able to select and display video streams that are not currently displayed.
      - Criterion 2: The application should handle the case where the user tries to display a video stream that is already being displayed.
-   - Tasks:
+   - Tasks [/]:
      - [ ] Implement a feature to display video streams that are not currently displayed.
      - [ ] Handle the case where the user tries to display a video stream that is already being displayed.
 
-** TODO [0/0] USERSTORY004: As a user, I want to be able to remove a video stream that is currently displayed so that I can manage the video streams that I am viewing.
+** TODO USERSTORY005: As a user, I want to be able to remove a video stream that is currently displayed so that I can manage the video streams that I am viewing.
    :PROPERTIES:
    :StoryPoints: 6
    :AssignedTo: AW
@@ -66,11 +75,11 @@
    - Acceptance Criteria:
      - Criterion 1: The user should be able to remove a video stream that is currently displayed.
      - Criterion 2: The application should update the display after a video stream is removed.
-   - Tasks:
+   - Tasks [0/3]:
      - [ ] Implement a feature to remove a video stream that is currently displayed.
      - [ ] Update the display after a video stream is removed.
 
-** TODO [Next User Story ID]: As a [another type of user], I want [another action] so that [another benefit/value].
+** [Next User Story ID]: As a [another type of user], I want [another action] so that [another benefit/value].
    :PROPERTIES:
    :StoryPoints: [Estimate]
    :AssignedTo: [Team Member]

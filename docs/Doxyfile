@@ -1,0 +1,54 @@
+#---------------------------------------------------------------------------
+# Doxyfile for vidcap Application
+#---------------------------------------------------------------------------
+
+# Set the project name and version
+PROJECT_NAME           = "vidcap Application"
+PROJECT_NUMBER         = 1.0
+
+# Specify the output directory for the generated documentation
+OUTPUT_DIRECTORY       = ./html
+
+# Set the input directories for the source code
+INPUT                  = ../src
+RECURSIVE              = YES
+
+# Set the include directories for the source code
+INCLUDE_PATH           = ../include
+
+# Specify the file patterns to process
+FILE_PATTERNS          = *.cpp *.h
+
+# Generate class diagrams
+CLASS_DIAGRAMS         = YES
+HAVE_DOT               = YES
+UML_LOOK               = YES
+
+# Add header to the generated documentation
+ALIASES                = "headerfile=\verbatim \file"
+INLINE_SOURCES         = YES
+
+# Use the default Doxygen stylesheet for HTML output
+HTML_STYLESHEET        = 
+
+# Enable the generation of a collaboration diagram for classes
+COLLABORATION_GRAPH    = YES
+
+# Enable the generation of a call graph for each function
+CALL_GRAPH             = YES
+
+# Enable detailed descriptions in the documentation
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Enable automatic detection of cross-references
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Document self-contained snippets
+REPEAT_BRIEF           = YES
+
+# Include undocumented members in the documentation
+EXCLUDE_SYMBOLS        = main
