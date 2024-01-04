@@ -19,6 +19,9 @@
    :StoryPoints: 4
    :AssignedTo: AW
    :END:
+   :LOGBOOK:
+   CLOCK: [2024-01-04 Thu 08:31]
+   :END:
    - Description: When the application is launched, it should automatically enumerate the video capture devices available on the system.
    - Acceptance Criteria:
      - Criterion 1: The application should enumerate the video capture devices on system launch.
