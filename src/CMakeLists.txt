@@ -17,7 +17,7 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)  # Optionally, disable building exam
 
 FetchContent_MakeAvailable(opencv)
 
-add_executable(vidcap main.cpp)
+add_executable(vidcap main.cpp vidcap.cpp vidcap.h)
 
 # set the include directories for openCV
 target_include_directories(vidcap PUBLIC
